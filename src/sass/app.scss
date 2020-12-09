@@ -1,0 +1,80 @@
+$lightgrey: hsl(0, 0%, 87%);
+
+html {
+  font-family: "DM Sans", sans-serif;
+  min-width: 100vw;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 4px;
+}
+
+p {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1rem 10rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+
+  font-size: 12px;
+  letter-spacing: 2px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.nav-link-middle {
+  margin: 0 37px;
+}
+
+.nav-link:hover {
+  color: $lightgrey;
+}
+
+.nav-button {
+  font-family: "DM Sans", sans-serif;
+  color: white;
+  background-color: black;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 2px;
+  line-height: 16px;
+  outline-color: transparent;
+  border-color: transparent;
+  padding: 0.75rem 1.5rem;
+}
+
+.nav-button:hover {
+  cursor: pointer;
+  color: black;
+  background-color: $lightgrey;
+}
+
+// .nav-triangle {
+//   width: 19px;
+//   height: 16px;
+//   background: linear-gradient(
+//     to top right,
+//     hsl(28, 100%, 79%),
+//     hsl(329, 36%, 59%),
+//     hsl(229, 100%, 67%)
+//   );
+//   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+// }

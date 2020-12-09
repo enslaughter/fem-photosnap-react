@@ -1,0 +1,47 @@
+$lightgrey: hsl(0, 0%, 87%);
+
+.home-card,
+.card-button {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+}
+
+.home-card--info {
+  padding: 0 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-card--info > h2 {
+  margin: 0;
+}
+
+.home-card-black {
+  color: white;
+  background-color: black;
+}
+
+.home-card-black > p {
+  opacity: 60%;
+}
+
+.card-button--action {
+  font-family: "DM Sans", sans-serif;
+  outline-color: transparent;
+  border-color: transparent;
+  color: inherit;
+  background-color: transparent;
+  padding: 0;
+  margin-right: 1rem;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+}
+
+.card-button--action:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
