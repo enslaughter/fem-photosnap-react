@@ -1,10 +1,11 @@
 import React from "react";
+import logo from "../assets/shared/desktop/logo.svg";
 
 function Navbar(){
     return(
         <div className="navbar">
           <div className="nav-logo">
-            <img src={process.env.PUBLIC_URL + "/assets/shared/desktop/logo.svg"} alt=""></img>
+            <img src={logo} alt=""></img>
           </div>
           <nav className="nav-link-container">
                 <a className="nav-link" href="#">STORIES</a>

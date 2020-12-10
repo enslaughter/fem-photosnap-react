@@ -45,3 +45,67 @@ $lightgrey: hsl(0, 0%, 87%);
   cursor: pointer;
   text-decoration: underline;
 }
+
+.story-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.story-card {
+  color: white;
+  padding: 2rem;
+  box-sizing: border-box;
+  min-height: 500px;
+  max-height: 500px;
+  min-width: 360px;
+  max-width: 360px;
+}
+
+.s-themountains {
+  background-image: url("../assets/stories/desktop/mountains.jpg");
+}
+
+.s-cityscapes {
+  background-image: url("../assets/stories/desktop/cityscapes.jpg");
+}
+
+.s-18days {
+  background-image: url("../assets/stories/desktop/18-days-voyage.jpg");
+}
+
+.s-architecturals {
+  background-image: url("../assets/stories/desktop/architecturals.jpg");
+}
+
+.home-features {
+  display: grid;
+  padding: 165px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  column-gap: 30px;
+}
+
+.home-feature {
+  text-align: center;
+}
+
+// .home-features {
+//   display: flex;
+//   flex-direction: row;
+//   padding: 165px;
+// }
+
+// .home-feature {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   text-align: center;
+// }
+
+// .home-feature--middle {
+//   position: relative;
+//   top: 18px;
+// }
