@@ -85,4 +85,64 @@ p {
   color: white;
   background-color: black;
   padding: 4rem 10.3rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-logos,
+.footer-nav,
+.footer-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-logos {
+  justify-content: space-between;
+  margin-right: 109px;
+}
+
+.footer-logos > img {
+  max-width: 170px;
+}
+
+.footer-logos-socials > img {
+  margin-right: 13.33px;
+}
+
+.footer-nav > a {
+  text-decoration: none;
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  margin-top: 19px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+}
+
+.footer-nav > a:hover {
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.footer-nav > a:first-child {
+  margin-top: 0px;
+}
+
+.footer-right {
+  justify-content: space-between;
+}
+
+.copyright {
+  opacity: 50%;
+  font-size: 15px;
+  line-height: 20px;
 }

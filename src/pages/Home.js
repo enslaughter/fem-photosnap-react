@@ -2,6 +2,8 @@ import React from "react";
 import "../sass/home.scss";
 
 import buttonarrow from "../assets/shared/desktop/arrow.svg";
+import buttonarrowwhite from "../assets/shared/desktop/arrow-white.svg";
+
 import beautifulstories from "../assets/home/desktop/beautiful-stories.jpg";
 import desginedforeveryone from "../assets/home/desktop/designed-for-everyone.jpg";
 import createandshare from "../assets/home/desktop/create-and-share.jpg";
@@ -20,7 +22,7 @@ function Home(){
                     <p>Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories, and connect with others.</p>
                     <div className="card-button">
                         <button className="card-button--action">GET AN INVITE</button>
-                        <img src={buttonarrow} alt=""></img>
+                        <img src={buttonarrowwhite} alt=""></img>
                     </div>
                 </div>
                
@@ -60,41 +62,42 @@ function Home(){
                     <hr className="story-hr" />
                     <div className="story-button">
                         <a href="#">READ STORY</a>
-                        <img src={buttonarrow} alt=""></img>
+                        <img src={buttonarrowwhite} alt=""></img>
                     </div>
                 </div>
                 <div className="story-card s-cityscapes">
-                    <h3>The Mountains</h3>
-                    <p>by John Appleseed</p>
+                    <h3>Sunset Cityscapes</h3>
+                    <p>by Benjamin Cruz</p>
                     <hr className="story-hr" />
                     <div className="story-button">
                         <a href="#">READ STORY</a>
-                        <img src={buttonarrow} alt=""></img>
+                        <img src={buttonarrowwhite} alt=""></img>
                     </div>
                 </div>
                 <div className="story-card s-18days">
-                    <h3>The Mountains</h3>
-                    <p>by John Appleseed</p>
+                <div className="story-gradient"></div>
+                    <h3>18 Days Voyage</h3>
+                    <p>by Alexei Borodin</p>
                     <hr className="story-hr" />
                     <div className="story-button">
                         <a href="#">READ STORY</a>
-                        <img src={buttonarrow} alt=""></img>
+                        <img src={buttonarrowwhite} alt=""></img>
                     </div>
                 </div>
                 <div className="story-card s-architecturals">
-                    <h3>The Mountains</h3>
-                    <p>by John Appleseed</p>
+                    <h3>Architecturals</h3>
+                    <p>by Samantha Brooke</p>
                     <hr className="story-hr" />
                     <div className="story-button">
                         <a href="#">READ STORY</a>
-                        <img src={buttonarrow} alt=""></img>
+                        <img src={buttonarrowwhite} alt=""></img>
                     </div>
                 </div>
             </div>
 
             <div className="home-features">
                     <img src={featureresponsive} alt=""></img>
-                    <img src={featurenolimit} alt=""></img>
+                    <img className="feature-logo-middle" src={featurenolimit} alt=""></img>
                     <img src={featureembed} alt=""></img>
                 
                
