@@ -31,7 +31,7 @@ function App() {
     <div className="App">
       <div className="navbar">
           <div className="nav-logo">
-            <img src={logo} alt=""></img>
+            <a href="/"><img src={logo} alt=""></img></a>
           </div>
           <nav className="nav-link-container">
                 <Link to="/stories" className="nav-link">STORIES</Link>

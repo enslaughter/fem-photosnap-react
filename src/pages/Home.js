@@ -55,8 +55,8 @@ function Home(){
                 
             </div>
 
-            <div className="story-card-container">
-                <div className="story-card s-themountains">
+            <div className="home-story-card-container">
+                <div className="home-story-card s-themountains">
                     <h3>The Mountains</h3>
                     <p>by John Appleseed</p>
                     <hr className="story-hr" />
@@ -65,7 +65,7 @@ function Home(){
                         <img src={buttonarrowwhite} alt=""></img>
                     </div>
                 </div>
-                <div className="story-card s-cityscapes">
+                <div className="home-story-card s-cityscapes">
                     <h3>Sunset Cityscapes</h3>
                     <p>by Benjamin Cruz</p>
                     <hr className="story-hr" />
@@ -74,7 +74,7 @@ function Home(){
                         <img src={buttonarrowwhite} alt=""></img>
                     </div>
                 </div>
-                <div className="story-card s-18days">
+                <div className="home-story-card s-18days">
                 <div className="story-gradient"></div>
                     <h3>18 Days Voyage</h3>
                     <p>by Alexei Borodin</p>
@@ -84,7 +84,7 @@ function Home(){
                         <img src={buttonarrowwhite} alt=""></img>
                     </div>
                 </div>
-                <div className="story-card s-architecturals">
+                <div className="home-story-card s-architecturals">
                     <h3>Architecturals</h3>
                     <p>by Samantha Brooke</p>
                     <hr className="story-hr" />

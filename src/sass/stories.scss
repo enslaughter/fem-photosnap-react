@@ -1,0 +1,301 @@
+.story-featured {
+  background-image: url("../assets/stories/desktop/moon-of-appalacia.jpg");
+  background-color: black;
+  height: 650px;
+  width: 100%;
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.story-featured-info-top,
+.story-featured-info-bottom {
+  width: 500px;
+  margin-left: 7rem;
+}
+
+.story-featured-preheader {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+}
+
+.story-featured-header {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 4.17px;
+}
+
+.story-featured-attribution {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.story-featured-date {
+  font-size: 13px;
+  line-height: 16.93px;
+  opacity: 75%;
+  margin-right: 9px;
+  font-weight: 400;
+}
+
+.story-featured-author {
+  font-size: 13px;
+  line-height: 16.93px;
+}
+
+.story-featured-description {
+  opacity: 60%;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.story-featured-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.story-featured-button > a {
+  text-decoration: none;
+  color: white;
+  line-height: 16px;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 1rem;
+}
+
+.story-card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.story-card {
+  color: white;
+  padding: 2.5rem;
+  box-sizing: border-box;
+  min-height: 500px;
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.story-card:hover {
+  cursor: pointer;
+  transform: translateY(-16px);
+}
+
+.story-card > h3 {
+  font-size: 18px;
+  line-height: 25px;
+  margin: 0;
+  margin-bottom: 4px;
+  padding: 0;
+}
+
+.story-card > p {
+  font-size: 13px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0;
+}
+
+.story-hr {
+  color: hsl(0, 0%, 87%);
+  width: 100%;
+  border-style: solid none none none;
+  opacity: 60%;
+  margin-top: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.story-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.story-button > a {
+  text-decoration: none;
+  color: white;
+  line-height: 16px;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.s-themountains {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.01) 28%,
+      rgba(0, 0, 0, 0.66) 100%
+    ),
+    url("../assets/stories/desktop/mountains.jpg");
+}
+
+.s-cityscapes {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.01) 28%,
+      rgba(0, 0, 0, 0.66) 100%
+    ),
+    url("../assets/stories/desktop/cityscapes.jpg");
+}
+
+.s-18days {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.01) 28%,
+      rgba(0, 0, 0, 0.66) 100%
+    ),
+    url("../assets/stories/desktop/18-days-voyage.jpg");
+}
+
+.s-architecturals {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.01) 28%,
+      rgba(0, 0, 0, 0.66) 100%
+    ),
+    url("../assets/stories/desktop/architecturals.jpg");
+}
+
+.s-worldtour {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.01) 28%,
+      rgba(0, 0, 0, 0.66) 100%
+    ),
+    url("../assets/stories/desktop/world-tour.jpg");
+}
+
+.s-unforeseencorners {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.01) 28%,
+      rgba(0, 0, 0, 0.66) 100%
+    ),
+    url("../assets/stories/desktop/unforeseen-corners.jpg");
+}
+
+.s-kingonafrica {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.01) 28%,
+      rgba(0, 0, 0, 0.66) 100%
+    ),
+    url("../assets/stories/desktop/king-on-africa.jpg");
+}
+
+.s-triptonowhere {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.01) 28%,
+      rgba(0, 0, 0, 0.66) 100%
+    ),
+    url("../assets/stories/desktop/trip-to-nowhere.jpg");
+}
+
+.s-rageofthesea {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.01) 28%,
+      rgba(0, 0, 0, 0.66) 100%
+    ),
+    url("../assets/stories/desktop/rage-of-the-sea.jpg");
+}
+
+.s-runningfree {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.01) 28%,
+      rgba(0, 0, 0, 0.66) 100%
+    ),
+    url("../assets/stories/desktop/running-free.jpg");
+}
+
+.s-behindthewaves {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.01) 28%,
+      rgba(0, 0, 0, 0.66) 100%
+    ),
+    url("../assets/stories/desktop/behind-the-waves.jpg");
+}
+
+.s-calmwaters {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.01) 28%,
+      rgba(0, 0, 0, 0.66) 100%
+    ),
+    url("../assets/stories/desktop/calm-waters.jpg");
+}
+
+.s-themilkyway {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.01) 28%,
+      rgba(0, 0, 0, 0.66) 100%
+    ),
+    url("../assets/stories/desktop/milky-way.jpg");
+}
+
+.s-nightatthedarkforest {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.01) 28%,
+      rgba(0, 0, 0, 0.66) 100%
+    ),
+    url("../assets/stories/desktop/dark-forest.jpg");
+}
+
+.s-somwarpetsbeauty {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.01) 28%,
+      rgba(0, 0, 0, 0.66) 100%
+    ),
+    url("../assets/stories/desktop/somwarpet.jpg");
+}
+
+.s-landofdreams {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.01) 28%,
+      rgba(0, 0, 0, 0.66) 100%
+    ),
+    url("../assets/stories/desktop/land-of-dreams.jpg");
+}

@@ -46,12 +46,13 @@ $lightgrey: hsl(0, 0%, 87%);
   text-decoration: underline;
 }
 
-.story-card-container {
+.home-story-card-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
 }
 
-.story-card {
+.home-story-card {
   color: white;
   padding: 2.5rem;
   box-sizing: border-box;
@@ -65,11 +66,12 @@ $lightgrey: hsl(0, 0%, 87%);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  transition: transform 0.3s;
 }
 
-.story-card:hover {
+.home-story-card:hover {
   cursor: pointer;
-  bottom: 1rem;
+  transform: translateY(-16px);
 }
 
 .story-card > h3 {

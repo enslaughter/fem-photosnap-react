@@ -1,0 +1,25 @@
+.pricing-card {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  width: 100%;
+}
+
+.pricing-card--info {
+  color: white;
+  background-color: black;
+  padding: 7rem;
+}
+
+.pricing-card--info > h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 4.17px;
+}
+
+.pricing-card--info > p {
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 60%;
+}
