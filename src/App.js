@@ -70,7 +70,7 @@ function App() {
 
             <div className="footer-right">
                 <div className="card-button">
-                    <button className="card-button--action">GET AN INVITE</button>
+                    <button className="card-button--action" title="Dead link for display purposes only">GET AN INVITE</button>
                     <img src={buttonarrowwhite} alt=""></img>
                  </div>
                  <p className="copyright">Copyright 2019. All Rights Reserved</p>

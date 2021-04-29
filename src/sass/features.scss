@@ -6,6 +6,8 @@
 }
 
 .feature-card--info {
+  box-sizing: border-box;
+  flex-basis: 40%;
   color: white;
   background-color: black;
   padding: 7rem;
@@ -22,4 +24,59 @@
   font-size: 15px;
   line-height: 25px;
   opacity: 60%;
+}
+
+.feature-card--image {
+  flex-basis: 60%;
+  background-image: url(../assets/features/desktop/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left center;
+}
+
+.features-container {
+  margin: 160px 165px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  div {
+    flex-basis: 33%;
+  }
+}
+
+.feature-box {
+  &:nth-child(-n + 2) {
+    margin-bottom: 104px;
+  }
+  box-sizing: border-box;
+  height: 236px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+.fb-center {
+  padding: 0px 30px;
+}
+
+.feature-cta {
+  display: flex;
+  color: white;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url(../assets/shared/desktop/bg-beta.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 68px 165px;
+  p {
+    max-width: 400px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 4.17px;
+  }
 }

@@ -1,5 +1,8 @@
 $lightgrey: hsl(0, 0%, 87%);
 
+//The current mobile breakpoint should be
+$mobilebp: 1000px;
+
 html {
   font-family: "DM Sans", sans-serif;
   min-width: 100%;
@@ -142,6 +145,7 @@ p {
 
 .footer-right {
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 .copyright {
