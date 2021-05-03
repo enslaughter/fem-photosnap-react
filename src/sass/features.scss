@@ -13,6 +13,11 @@
   padding: 7rem;
 }
 
+.home-card--center {
+  color: black;
+  background-color: white;
+}
+
 .feature-card--info > h2 {
   font-size: 40px;
   font-weight: 700;
@@ -32,6 +37,25 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left center;
+}
+
+@media all and (max-width: 1000px) {
+  .feature-card {
+    flex-direction: column-reverse;
+  }
+
+  .feature-card--info {
+    padding: 72px 32px;
+  }
+
+  .home-card--center {
+    flex-direction: column;
+  }
+
+  .feature-card--image {
+    flex-basis: auto;
+    height: 271px;
+  }
 }
 
 .features-container {

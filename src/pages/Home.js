@@ -22,8 +22,8 @@ function Home() {
 
   return (
     <div>
-      <div className="home-card">
-        <div className="home-card--info home-card-black">
+      <div className="feature-card">
+        <div className="feature-card--info home-card-black">
           <h2>CREATE AND SHARE YOUR PHOTO STORIES.</h2>
           <p>
             Photosnap is a platform for photographers and visual storytellers.
@@ -35,15 +35,11 @@ function Home() {
             <img src={buttonarrowwhite} alt=""></img>
           </div>
         </div>
-        {windowSize > 1000 ? (
-          <img src={createandshare} alt=""></img>
-        ) : (
-          <img src={createandsharemobile} alt=""></img>
-        )}
+        <div className="home-card--image hc-image1"></div>
       </div>
-      <div className="home-card home-card--center">
-        <img src={beautifulstories} alt=""></img>
-        <div className="home-card--info">
+      <div className="feature-card home-card--center">
+        <div className="home-card--image hc-image2"></div>
+        <div className="feature-card--info home-card--center">
           <h2>BEAUTIFUL STORIES EVERY TIME.</h2>
           <p>
             We provide design templates to ensure your stories look terrific.
@@ -56,8 +52,8 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="home-card">
-        <div className="home-card--info">
+      <div className="feature-card">
+        <div className="feature-card--info">
           <h2>DESIGNED FOR EVERYONE.</h2>
           <p>
             Photosnap can help you create stories that resonate with your
@@ -66,10 +62,10 @@ function Home() {
           </p>
           <div className="card-button">
             <button className="card-button--action">VIEW THE STORIES</button>
-            <img src={buttonarrow} alt=""></img>
+            <img src={buttonarrowwhite} alt=""></img>
           </div>
         </div>
-        <img src={desginedforeveryone} alt=""></img>
+        <div className="home-card--image hc-image3"></div>
       </div>
 
       <div className="home-story-card-container">
