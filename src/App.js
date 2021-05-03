@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useWindowSize } from "./components/Functionality";
 import Home from "./pages/Home.js";
 import Stories from "./pages/Stories.js";
@@ -19,10 +19,19 @@ import instagram from "./assets/shared/desktop/instagram.svg";
 
 import buttonarrowwhite from "./assets/shared/desktop/arrow-white.svg";
 
+import menuopen from "./assets/shared/mobile/menu.svg";
+import menuclosed from "./assets/shared/mobile/close.svg";
+
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
   let windowSize = useWindowSize();
+
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  function toggleMobileMenu() {
+    mobileMenuOpen ? setMobileMenuOpen(false) : setMobileMenuOpen(true);
+  }
 
   return (
     <Router>
@@ -49,7 +58,32 @@ function App() {
           {windowSize.width > 1000 && (
             <button className="nav-button">GET AN INVITE</button>
           )}
+          {windowSize.width <= 1000 && (
+            <button className="nav-mobile-toggle" onClick={toggleMobileMenu}>
+              {mobileMenuOpen ? (
+                <img src={menuclosed} alt="Toggle Mobile Menu"></img>
+              ) : (
+                <img src={menuopen} alt="Toggle Mobile Menu"></img>
+              )}
+            </button>
+          )}
         </div>
+        {mobileMenuOpen && (
+          <div className="mobile-nav-menu">
+            <nav className="mobile-nav-container">
+              <a className="mobile-nav-link" href="/stories">
+                STORIES
+              </a>
+              <a className="mobile-nav-link" href="/features">
+                FEATURES
+              </a>
+              <a className="mobile-nav-link" href="/pricing">
+                PRICING
+              </a>
+            </nav>
+            <button className="mobile-nav-button">GET AN INVITE</button>
+          </div>
+        )}
 
         <Switch>
           <Route exact path="/" component={Home} />
