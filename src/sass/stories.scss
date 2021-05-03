@@ -73,14 +73,48 @@
   margin-right: 1rem;
 }
 
+@media all and (max-width: 1000px) {
+  .story-featured {
+    height: auto;
+    width: auto;
+    align-items: center;
+    padding: 48px 28px;
+  }
+
+  .story-featured-info-top,
+  .story-featured-info-bottom {
+    margin: 0;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .story-featured {
+    &::before {
+      content: "";
+      background-image: url("../assets/stories/mobile/moon-of-appalacia.jpg");
+      background-size: cover;
+      background-position: top center;
+      width: calc(100% + 56px);
+      height: 317px;
+      transform: translateY(-48px);
+    }
+    background: black;
+  }
+  .story-featured-info-top,
+  .story-featured-info-bottom {
+    width: auto;
+  }
+}
+
 .story-card-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .story-card {
   color: white;
+  flex-basis: 25%;
   padding: 2.5rem;
   box-sizing: border-box;
   min-height: 500px;
@@ -94,6 +128,21 @@
   background-size: cover;
   position: relative;
   transition: transform 0.3s;
+}
+
+@media all and (max-width: 1000px) {
+  .story-card {
+    flex-basis: 50%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .story-card-container {
+    flex-direction: column;
+  }
+  .story-card {
+    flex-basis: 100%;
+  }
 }
 
 .story-card:hover {

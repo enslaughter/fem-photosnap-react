@@ -9,8 +9,8 @@ function Pricing() {
 
   return (
     <div>
-      <div className="pricing-card">
-        <div className="pricing-card--info">
+      <div className="feature-card">
+        <div className="feature-card--info">
           <h2>PRICING</h2>
           <p>
             Create all your stories, Photosnap is a platform for photographers

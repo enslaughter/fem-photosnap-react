@@ -88,12 +88,20 @@
 
 @media all and (max-width: 1000px) {
   .features-container {
-    margin: 80px 32px;
+    margin: 64px 32px;
     flex-direction: column;
   }
 
   .feature-box {
+    margin-bottom: 56px;
+  }
+
+  .feature-box {
     text-align: center;
+  }
+
+  .fb-center {
+    padding: 0px;
   }
 }
 
@@ -113,5 +121,13 @@
     font-size: 40px;
     line-height: 48px;
     letter-spacing: 4.17px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .feature-cta {
+    flex-direction: column;
+    padding: 64px 32px;
+    align-items: flex-start;
   }
 }
