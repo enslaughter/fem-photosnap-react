@@ -1,4 +1,5 @@
 import React from "react";
+import { useWindowSize } from "./components/Functionality";
 import Home from "./pages/Home.js";
 import Stories from "./pages/Stories.js";
 import Features from "./pages/Features.js";
@@ -18,67 +19,87 @@ import instagram from "./assets/shared/desktop/instagram.svg";
 
 import buttonarrowwhite from "./assets/shared/desktop/arrow-white.svg";
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
+  let windowSize = useWindowSize();
+
   return (
     <Router>
-    <div className="App">
-      <div className="navbar">
+      <div className="App">
+        <div className="navbar">
           <div className="nav-logo">
-            <a href="/"><img src={logo} alt=""></img></a>
+            <a href="/">
+              <img src={logo} alt=""></img>
+            </a>
           </div>
-          <nav className="nav-link-container">
-                <Link to="/stories" className="nav-link">STORIES</Link>
-                <Link to="/features" className="nav-link nav-link-middle">FEATURES</Link>
-                <Link to="/pricing" className="nav-link">PRICING</Link>
-          </nav>
-        <button className="nav-button">GET AN INVITE</button>
-      </div>
-
-      <Switch>
-        <Route exact path="/" component={Home}/>
-        <Route exact path="/stories" component={Stories}/>
-        <Route exact path="/features" component={Features}/>
-        <Route exact path="/pricing" component={Pricing}/>
-      </Switch>
-
-      <div className="photosnap-footer">
-            <div className="footer-left">
-                <div className="footer-logos">
-                    <img src={logowhite} alt=""></img>
-                    <div className="footer-logos-socials">
-                        <img src={facebook} alt=""></img>
-                        <img src={youtube} alt=""></img>
-                        <img src={twitter} alt=""></img>
-                        <img src={pinterest} alt=""></img>
-                        <img src={instagram} alt=""></img>
-                    </div>
-                </div>
-                <nav className="footer-nav">
-                    <a className="footer-link" href="/">HOME</a>
-                    <a className="footer-link" href="/stories">STORIES</a>
-                    <a className="footer-link" href="/features">FEATURES</a>
-                    <a className="footer-link" href="/pricing">PRICING</a>
-                </nav>
-            </div>
-
-            <div className="footer-right">
-                <div className="card-button">
-                    <button className="card-button--action" title="Dead link for display purposes only">GET AN INVITE</button>
-                    <img src={buttonarrowwhite} alt=""></img>
-                 </div>
-                 <p className="copyright">Copyright 2019. All Rights Reserved</p>
-            </div>
-        
-            
+          {windowSize.width > 1000 && (
+            <nav className="nav-link-container">
+              <Link to="/stories" className="nav-link">
+                STORIES
+              </Link>
+              <Link to="/features" className="nav-link nav-link-middle">
+                FEATURES
+              </Link>
+              <Link to="/pricing" className="nav-link">
+                PRICING
+              </Link>
+            </nav>
+          )}
+          {windowSize.width > 1000 && (
+            <button className="nav-button">GET AN INVITE</button>
+          )}
         </div>
-    </div>
+
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/stories" component={Stories} />
+          <Route exact path="/features" component={Features} />
+          <Route exact path="/pricing" component={Pricing} />
+        </Switch>
+
+        <div className="photosnap-footer">
+          <div className="footer-left">
+            <div className="footer-logos">
+              <img src={logowhite} alt=""></img>
+              <div className="footer-logos-socials">
+                <img src={facebook} alt=""></img>
+                <img src={youtube} alt=""></img>
+                <img src={twitter} alt=""></img>
+                <img src={pinterest} alt=""></img>
+                <img src={instagram} alt=""></img>
+              </div>
+            </div>
+            <nav className="footer-nav">
+              <a className="footer-link" href="/">
+                HOME
+              </a>
+              <a className="footer-link" href="/stories">
+                STORIES
+              </a>
+              <a className="footer-link" href="/features">
+                FEATURES
+              </a>
+              <a className="footer-link" href="/pricing">
+                PRICING
+              </a>
+            </nav>
+          </div>
+
+          <div className="footer-right">
+            <div className="card-button">
+              <button
+                className="card-button--action"
+                title="Dead link for display purposes only"
+              >
+                GET AN INVITE
+              </button>
+              <img src={buttonarrowwhite} alt=""></img>
+            </div>
+            <p className="copyright">Copyright 2019. All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
     </Router>
   );
 }

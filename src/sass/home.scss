@@ -7,11 +7,27 @@ $lightgrey: hsl(0, 0%, 87%);
   justify-items: center;
 }
 
+@media all and (max-width: 1000px) {
+  .home-card {
+    flex-direction: column-reverse;
+  }
+
+  .home-card--center {
+    flex-direction: column;
+  }
+}
+
 .home-card--info {
   padding: 0 7rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+@media all and (max-width: 1000px) {
+  .home-card--info {
+    padding: 72px 32px;
+  }
 }
 
 .home-card--info > h2 {
@@ -47,9 +63,20 @@ $lightgrey: hsl(0, 0%, 87%);
 }
 
 .home-story-card-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
+  display: flex;
+  flex-direction: row;
+  div {
+    flex-basis: 25%;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .home-story-card-container {
+    flex-direction: column;
+    div {
+      flex-basis: auto;
+    }
+  }
 }
 
 .home-story-card {
@@ -153,39 +180,37 @@ $lightgrey: hsl(0, 0%, 87%);
     url("../assets/stories/desktop/architecturals.jpg");
 }
 
-.home-features {
-  display: grid;
-  padding: 165px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  justify-items: center;
-  column-gap: 30px;
+.features-container {
+  margin: 160px 165px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  div {
+    flex-basis: 33%;
+  }
 }
 
-.home-feature {
-  text-align: center;
+.feature-box {
+  &:nth-child(-n + 2) {
+    margin-bottom: 104px;
+  }
+  box-sizing: border-box;
+  height: 236px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
 }
 
-.feature-logo-middle {
-  position: relative;
-  top: 18px;
+.fb-center {
+  padding: 0px 30px;
 }
 
-// .home-features {
-//   display: flex;
-//   flex-direction: row;
-//   padding: 165px;
-// }
-
-// .home-feature {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   text-align: center;
-// }
-
-// .home-feature--middle {
-//   position: relative;
-//   top: 18px;
-// }
+@media all and (max-width: 1000px) {
+  .features-container {
+    margin: 80px 32px;
+    flex-direction: column;
+  }
+}

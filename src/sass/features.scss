@@ -62,6 +62,17 @@
   padding: 0px 30px;
 }
 
+@media all and (max-width: 1000px) {
+  .features-container {
+    margin: 80px 32px;
+    flex-direction: column;
+  }
+
+  .feature-box {
+    text-align: center;
+  }
+}
+
 .feature-cta {
   display: flex;
   color: white;
